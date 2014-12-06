@@ -1,0 +1,23 @@
+{
+  "name": "commit-history-for-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "js": "6to5 --modules commonInterop src --out-dir dist",
+    "test": "npm run js && 6to5-node test | tap-spec"
+  },
+  "author": "Brian LeRoux <b@brian.io>",
+  "license": "Apache2",
+  "dependencies": {
+    "async": "^0.9.0",
+    "cheerio": "^0.18.0",
+    "request": "^2.49.0",
+    "sparkline": "^0.1.1"
+  },
+  "devDependencies": {
+    "6to5": "^1.14.10",
+    "tap-spec": "^2.1.1",
+    "tape": "^3.0.3"
+  }
+}
